@@ -36,8 +36,8 @@
   (< (abs (- (improve guess x) guess))
      (* guess 0.001)))
 
-;This modified good-enough function is better for large ans small numbers, as the predetermined tolerance
-; is no leonger a specific number but a fraction of the previous guess. This avoids the problems encountered
+;This modified good-enough function is better for large and small numbers, as the predetermined tolerance
+; is no longer a specific number but a fraction of the previous guess. This avoids the problems encountered
 ;by the original version. 
 
 
