@@ -1,0 +1,13 @@
+#lang sicp
+
+(define (smooth f)
+  (lambda (x)
+    (/ (+
+        (f (- x 0.001))
+        (f x)
+        (f (+ x 0.001)))
+       3)))
+
+
+
+
